@@ -1,0 +1,71 @@
+\setlength{\parindent}{0 in}
+%\setlength{\voffset}{-1 em}
+
+\setlength{\footskip}{0pt}
+
+\def\dateColWidth{0.125\textwidth}
+\def\sectionHeaderIndent{0.095\textwidth}
+\def\skillsColWidth{0.32\textwidth}
+\def\spaceAfterSection{\vspace{0.05 in}}
+\def\spaceBeforeDivLine{\vspace{-0.2 em}}
+\def\spaceAfterDivLine{\vspace{-0.4 em}}
+\def\divLine{
+	\spaceBeforeDivLine
+	\center{ \line(1,0){450}}
+	\spaceAfterDivLine
+}
+
+\def\dateColBG{Gray!30}
+
+\def\myURL{\href{http://www.claytonketner.com}{\uline{www.claytonketner.com}}}
+
+\newcommand{\mysubsection}[1]
+{%
+	{\large\textbf{#1}}
+}
+
+\newcommand{\sectionHeader}[1]
+{
+	\colorbox{Maroon!90}
+	{
+		\makebox[0.97\textwidth][l]
+		{
+			\hspace*{\sectionHeaderIndent}
+			{\Large
+				{
+					\lsstyle\textbf{\color{White}#1}
+				} 
+			}
+		}
+	}
+	
+	\vspace{-0.25 em}
+}
+
+\newcommand{\tag}[1]
+{%
+	\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
+}
+
+\newcounter{i}
+
+\newcommand{\skill}[2]
+{%
+	\def\stars{}
+	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
+	\forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
+	%
+	%\ifthenelse{\value{\widthof{\stars}} > \value{\widthof{#1}}}
+			   %{\def\boxWidth{\widthof{\stars}}}
+			   %{\def\boxWidth{\widthof{#1}}}
+	\begin{varwidth}{\textwidth}
+		\tag{#1}%
+		\ \stars
+	\end{varwidth}
+	\\[0.2em]
+}
+
+
+
+
+

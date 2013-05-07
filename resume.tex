@@ -1,0 +1,57 @@
+\documentclass[letterpaper, 10pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{changepage} % For indenting sections using \adjustwidth
+\usepackage[letterspace=100]{microtype} % For setting alternate text tracking (spacing between letters)
+\usepackage{marvosym} % For phone/mail/globe symbols
+\usepackage{anyfontsize}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage{enumitem} % For setting bullet style
+\usepackage{ulem} % Better underline
+\usepackage{hyperref} % URLs
+\usepackage{setspace} % line spacing
+\usepackage{calc} % For getting width of text
+\usepackage{forloop}
+\usepackage{ifthen}
+\usepackage{varwidth}
+\usepackage{pifont} % Dings
+
+\thispagestyle{empty} % Remove page numbers
+\pagestyle{empty} % Make sure page numbers are removed
+
+\geometry{layout=letterpaper}
+
+\input{definitions}
+
+\begin{document}
+
+\input{header}
+
+\vspace{0.05 in}
+
+\input{summary}
+
+\spaceAfterSection
+
+\input{education}
+
+\spaceAfterSection
+
+\input{work}
+
+\spaceAfterSection
+
+\input{experience}
+
+\spaceAfterSection
+
+\input{skills}
+
+\spaceAfterSection
+
+
+\input{awards}
+
+\end{document}
+
+
+
