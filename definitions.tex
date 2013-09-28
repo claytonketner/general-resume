@@ -14,6 +14,7 @@
 	\center{ \line(1,0){450}}
 	\spaceAfterDivLine
 }
+\def\skillsColWidth{0.33\textwidth}
 
 \def\dateColBG{Gray!30}
 
@@ -43,14 +44,14 @@
 }
 
 \newcommand{\tag}[1]
-{%
+{% Prints a 'tag'
 	\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
 }
 
 \newcounter{i}
 
-\newcommand{\skill}[2]
-{%
+\newcommand{\skillbr}[2]
+{% Prints a skill with a line break afterwards
 	\def\stars{}
 	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
 	\forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
@@ -65,7 +66,17 @@
 	\\[0.2em]
 }
 
+\newcommand{\skill}[2]
+{% Prints a skill without a line break afterwards 
+	\def\stars{}
+	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
+	\forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
+	%
+	\tag{#1 \ \stars} % Draw the tag
+		%\\
+		 % Draw a space then put the stars
+}
 
 
-
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % Table column type that lets you set a fixed column width
 
