@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
 Document=work.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=331
+Cursor=649
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
-Document=skills.tex
+Document=summary.tex
 
 [Frame1_View0,0]
-TopLine=40
-Cursor=1860
+TopLine=0
+Cursor=381
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
-Document=definitions.tex
+Document=header.tex
 
 [Frame2_View0,0]
-TopLine=26
-Cursor=2119
+TopLine=0
+Cursor=259
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
-Document=experience.tex
+Document=awards.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=509
+Cursor=770
 
 [Frame4]
 Flags=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
-Document=resume.tex
+Document=education.tex
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=765
+Cursor=787
 
 [Frame5]
 Flags=0
@@ -101,14 +101,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
-Document=awards.tex
+Document=resume.tex
 
 [Frame5_View0,0]
-TopLine=22
-Cursor=1253
+TopLine=0
+Cursor=765
 
 [Frame6]
 Flags=0
@@ -119,14 +119,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
-Document=header.tex
+Document=experience.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=259
+Cursor=509
 
 [Frame7]
 Flags=0
@@ -137,14 +137,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
-Document=education.tex
+Document=definitions.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=787
+Cursor=2119
 
 [Frame8]
 Flags=0
@@ -155,14 +155,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1147
-NormalPos.bottom=598
+NormalPos.right=1643
+NormalPos.bottom=894
 Class=LaTeXView
-Document=summary.tex
+Document=skills.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=315
+Cursor=24
 
 [SessionInfo]
 FrameCount=9
