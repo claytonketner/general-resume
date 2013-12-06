@@ -5,6 +5,7 @@
 
 \def\dateColWidth{0.125\textwidth}
 \def\sectionHeaderIndent{0.095\textwidth}
+\def\tabularIndent{0.095\textwidth}
 \def\skillsColWidth{0.32\textwidth}
 \def\spaceAfterSection{\vspace{0.05 in}}
 \def\spaceBeforeDivLine{\vspace{-0.2 em}}
@@ -39,13 +40,20 @@
 			}
 		}
 	}
-	
-	\vspace{-0.25 em}
+	\vspace{0.3 em}
 }
 
 \newcommand{\tag}[1]
 {% Prints a 'tag'
-	\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
+	%\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
+	\mbox{\fontsize{8 pt}{0}{\textsf{\color{Black}\uppercase{#1}}}}%
+}
+
+\newcommand{\tagl}[1]
+{% Prints a 'tag'
+	%\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
+	\mbox{\fontsize{8 pt}{0}{\textsf{\color{Black}\uppercase{#1}}}}%
+	\ \vline\ %
 }
 
 \newcounter{i}
@@ -73,8 +81,6 @@
 	\forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
 	%
 	\tag{#1 \ \stars} % Draw the tag
-		%\\
-		 % Draw a space then put the stars
 }
 
 

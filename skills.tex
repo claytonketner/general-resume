@@ -1,63 +1,14 @@
 \sectionHeader{SKILLS}
 
-
-% Col 1
-\flushleft \begin{minipage}[t]{\dateColWidth}
-Engineering
-\end{minipage}
-% Col 2
-\begin{minipage}[t]{0.8\textwidth}
-	\begin{tabular}{ C{\skillsColWidth} C{\skillsColWidth} C{\skillsColWidth} }
-		\skill{SolidWorks}{5} &
-		\skill{Solid Edge}{4} &
-		\skill{Pro-E}{3} \\
-		\skill{LabVIEW}{4} &
-		\skill{MATLAB}{5} &
-		\skill{Simulink}{5} &
-		\skill{Technical Reports}{5}
-	\end{tabular}
-\end{minipage}
-
-\divLine
-
-% Col 1
-\flushleft \begin{minipage}[t]{\dateColWidth}
-Software
-\end{minipage}
-% Col 2
-\begin{minipage}[t]{0.8\textwidth}
-	\begin{tabular}{ C{\skillsColWidth} C{\skillsColWidth} C{\skillsColWidth} }
-		\skill{Java \& JUnit}{4} &
-		\skill{Concurrency}{4} &
-		\skill{Agents}{4} \\
-		\skill{C\#}{3} &
-		\skill{Python}{4} & 
-		\skill{LaTeX}{4}
-	\end{tabular}
-\end{minipage}
-
-\divLine
-
-% Col 1
-\flushleft \begin{minipage}[t]{\dateColWidth}
-Miscellaneous
-\end{minipage}
-% Col 2
-\begin{minipage}[t]{0.8\textwidth}.
-	\begin{tabular}{ C{\skillsColWidth} C{\skillsColWidth} C{\skillsColWidth} }
-		\skill{MS Word}{5} &
-		\skill{MS Excel}{5} &
-		\skill{Communication}{4} \\
-		\skill{Adobe Illustrator}{4} &
-		\skill{Rapid prototyping}{3} &
-		\skill{Electronics}{3} 
-	\end{tabular}
-\end{minipage}
-
-
-
-
-
-
-
-
+\begin{tabular}{ L{\dateColWidth} || c | c c c }
+	% Row 1
+	\multirow{3}{*}{Engineering} 	& CAD & \skill{SolidWorks \& Sim}{5} & \skill{Solid Edge}{4} & \skill{Pro-E}{3} \\ \cline{2-2}
+									& Code & \skill{LabVIEW}{4} & \skill{MATLAB}{5} & \skill{Simulink}{5} \\ \cline{2-2}
+									& Other & \skill{Tech Reports}{5} & & \\ \hhline{=====}
+	% Row 2
+	\multirow{2}{*}{Programming}	& Langs & \skill{Java \& JUnit}{4} & \skill{Python}{3} & \skill{LaTeX}{4} \\ \cline{2-2}
+									& Other & \skill{Concurrency}{3} & \skill{Agents}{3} & \skill{Robo Algorithms}{3} \\ \hhline{=====}
+	% Row 3
+	\multirow{2}{*}{Miscellaneous}	& \multirow{2}{*}{Misc} & \skill{Word \& Excel}{5} & \skill{Communication}{5} & \skill{Leadership}{4} \\
+									& & \skill{Rapid Proto}{3} & \skill{Electronics}{3} &  \\
+\end{tabular}
