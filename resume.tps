@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=experience.tex
+Document=work.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=452
+Cursor=285
 
 [Frame1]
 Flags=0
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=skills.tex
+Document=experience.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=843
+Cursor=452
 
 [Frame2]
 Flags=0
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=work.tex
+Document=education.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=351
+Cursor=164
 
 [Frame3]
 Flags=0
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=resume.tex
+Document=awards.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=656
+Cursor=524
 
 [Frame4]
 Flags=0
@@ -84,13 +84,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=education.tex
+Document=skills.tex
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=164
+Cursor=843
 
 [Frame5]
 Flags=0
@@ -102,13 +102,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=definitions.tex
+Document=resume.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=704
+Cursor=656
 
 [Frame6]
 Flags=0
@@ -120,13 +120,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=summary.tex
+Document=definitions.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=406
+Cursor=704
 
 [Frame7]
 Flags=0
@@ -138,13 +138,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=awards.tex
+Document=summary.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=367
+Cursor=406
 
 [Frame8]
 Flags=0
@@ -156,7 +156,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1643
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
 Document=header.tex
 
