@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
-Document=work.tex
+Document=education.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=285
+Cursor=813
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
-Document=experience.tex
+Document=work.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=452
+Cursor=635
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
-Document=education.tex
+Document=experience.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=164
+Cursor=452
 
 [Frame3]
 Flags=0
@@ -65,8 +65,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
 Document=awards.tex
 
@@ -83,8 +83,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
 Document=skills.tex
 
@@ -101,8 +101,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
 Document=resume.tex
 
@@ -119,8 +119,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
 Document=definitions.tex
 
@@ -137,8 +137,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
 Document=summary.tex
 
@@ -155,8 +155,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1643
-NormalPos.bottom=934
+NormalPos.right=1163
+NormalPos.bottom=714
 Class=LaTeXView
 Document=header.tex
 
