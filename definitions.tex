@@ -59,15 +59,12 @@
 
 \newcounter{i}
 
-\newcommand{\skillbr}[2]
-{% Prints a skill with a line break afterwards
+\newcommand{\skillstarbr}[2]
+{% Prints a skill with stars with a line break afterwards
 	\def\stars{}
 	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
 	\forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
 	%
-	%\ifthenelse{\value{\widthof{\stars}} > \value{\widthof{#1}}}
-			   %{\def\boxWidth{\widthof{\stars}}}
-			   %{\def\boxWidth{\widthof{#1}}}
 	\begin{varwidth}{\textwidth}
 		\tag{#1}%
 		\ \stars
@@ -75,13 +72,22 @@
 	\\[0.2em]
 }
 
-\newcommand{\skill}[2]
-{% Prints a skill without a line break afterwards 
+\newcommand{\skillstar}[2]
+{% Prints a skill with stars without a line break afterwards 
 	\def\stars{}
 	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
 	\forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
 	%
 	\tag{#1 \ \stars} % Draw the tag
+}
+
+\newcommand{\skill}[3] % Args: #1: Skill name, #2: number of years, #3: number of half years (should be 0 or 1)
+{% Prints a skill without a line break afterwards
+	\def\circles{}
+	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\circles\expandafter{\circles\CIRCLE}} % Full circles
+	\forLoop[1]{1}{#3}{i}{\expandafter\def\expandafter\circles\expandafter{\circles\LEFTCIRCLE}} % Half circle
+	%
+	\tag{#1 \raisebox{0.1 em}{\circles}} % Draw the tag
 }
 
 
