@@ -18,7 +18,7 @@ Document=education.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=790
+Cursor=998
 
 [Frame1]
 Flags=0
