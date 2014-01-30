@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
 Document=education.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=897
+Cursor=957
 
 [Frame1]
 Flags=0
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=skills.tex
+Document=experience.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=0
+Cursor=419
 
 [Frame2]
 Flags=0
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=summary.tex
+Document=header.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=0
+Cursor=354
 
 [Frame3]
 Flags=0
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=experience.tex
+Document=resume.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=0
+Cursor=505
 
 [Frame4]
 Flags=0
@@ -84,13 +84,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=definitions.tex
+Document=awards.tex
 
 [Frame4_View0,0]
-TopLine=3
-Cursor=902
+TopLine=0
+Cursor=524
 
 [Frame5]
 Flags=0
@@ -102,7 +102,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
 Document=work.tex
 
@@ -120,13 +120,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=awards.tex
+Document=definitions.tex
 
 [Frame6_View0,0]
-TopLine=0
-Cursor=524
+TopLine=3
+Cursor=902
 
 [Frame7]
 Flags=0
@@ -138,13 +138,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=resume.tex
+Document=summary.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=505
+Cursor=0
 
 [Frame8]
 Flags=0
@@ -156,13 +156,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1709
-NormalPos.bottom=894
+NormalPos.bottom=934
 Class=LaTeXView
-Document=header.tex
+Document=skills.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=300
+Cursor=0
 
 [SessionInfo]
 FrameCount=9
