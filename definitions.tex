@@ -27,7 +27,7 @@
 	{\large\textbf{#1}}
 }
 
-\newcommand{\sectionHeader}[1]
+\newcommand{\sectionHeader}[2]
 {
 	\colorbox{Maroon!90}
 	{
@@ -36,9 +36,10 @@
 			\hspace*{\sectionHeaderIndent}
 			{\Large
 				{
-					\lsstyle\textbf{\color{White}#1}
-				} 
+					\lsstyle\textbf{\color{White}#1}%
+				}%
 			}
+			\color{White}#2
 		}
 	}
 	\vspace{0.3 em}
