@@ -14,11 +14,11 @@ NormalPos.top=26
 NormalPos.right=1709
 NormalPos.bottom=894
 Class=LaTeXView
-Document=summary.tex
+Document=experience.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=420
+TopLine=31
+Cursor=1501
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=1709
 NormalPos.bottom=894
 Class=LaTeXView
-Document=skills.tex
+Document=summary.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=1231
+Cursor=420
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=1709
 NormalPos.bottom=894
 Class=LaTeXView
-Document=awards.tex
+Document=skills.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=0
+Cursor=1231
 
 [Frame3]
 Flags=0
@@ -68,11 +68,11 @@ NormalPos.top=26
 NormalPos.right=1709
 NormalPos.bottom=894
 Class=LaTeXView
-Document=resume.tex
+Document=awards.tex
 
 [Frame3_View0,0]
-TopLine=2
-Cursor=1466
+TopLine=0
+Cursor=0
 
 [Frame4]
 Flags=0
@@ -86,11 +86,11 @@ NormalPos.top=26
 NormalPos.right=1709
 NormalPos.bottom=894
 Class=LaTeXView
-Document=work.tex
+Document=resume.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=1268
+TopLine=2
+Cursor=1466
 
 [Frame5]
 Flags=0
@@ -104,11 +104,11 @@ NormalPos.top=26
 NormalPos.right=1709
 NormalPos.bottom=894
 Class=LaTeXView
-Document=definitions.tex
+Document=work.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=0
+Cursor=1268
 
 [Frame6]
 Flags=0
@@ -122,7 +122,7 @@ NormalPos.top=26
 NormalPos.right=1709
 NormalPos.bottom=894
 Class=LaTeXView
-Document=experience.tex
+Document=definitions.tex
 
 [Frame6_View0,0]
 TopLine=0
