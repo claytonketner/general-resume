@@ -1,58 +1,14 @@
-\documentclass[letterpaper, 10pt]{article}
-\usepackage[margin=0.4in]{geometry}
-\usepackage{changepage} % For indenting sections using \adjustwidth
-\usepackage[letterspace=100]{microtype} % For setting alternate text tracking (spacing between letters)
-\usepackage{marvosym} % For phone/mail/globe symbols
-\usepackage{anyfontsize}
-\usepackage[usenames, dvipsnames]{xcolor}
-\usepackage{enumitem} % For setting bullet style
-\usepackage{ulem} % Better underline
-\usepackage[hidelinks]{hyperref} % URLs
-\usepackage{setspace} % line spacing
-\usepackage{calc} % For getting width of text
-\usepackage{forloop}
-\usepackage{ifthen}
-\usepackage{varwidth}
-\usepackage{pifont} % Dings
-\usepackage{array,multirow} % For defining new table column types (see definitions file)
-\usepackage{hyphenat} % For specifying text that shouldn't be hyphenated (use \nohyphens{text})
-\usepackage{hhline} % Double horizontal line
-\usepackage{tabularx} % For line wrapping in tables
-\usepackage{tabu} % For making tables with vertical padding
-\usepackage{wasysym} % For circle skill icons
-
-\thispagestyle{empty} % Remove page numbers
-\pagestyle{empty} % Make sure page numbers are removed
-
-\geometry{layout=letterpaper}
-
-\input{definitions}
+\input{config}
 
 \begin{document}
-
 \input{header}
-
-\vspace{0.05 in}
-
 \input{summary}
-
 \spaceAfterSection
-
 \input{education}
-
 \spaceAfterSection
-
 \input{experience}
-
 \spaceAfterSection
-
 \input{skills}
-
 \spaceAfterSection
-
 \input{awards}
-
 \end{document}
-
-
-
