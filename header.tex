@@ -1,56 +1,27 @@
 % First header column
-\begin{minipage}[t]{0.65\textwidth}
-	\begingroup
-		\fontsize{30 pt}{0}\selectfont
-		Clayton
-		\color{Black}
-		Salinger
-		\color{Black}
-		Ketner
-	\endgroup
-	
-	\color{Maroon}
-	\textit{Mechanical Engineering \& Computer Science}
-	\color{Black}
-
-	\vspace{-0.9 em}
-
-	\line(1,0){330} \\[-1 em]
-	\line(1,0){330} \\[-1 em]
-
-	\vspace{0.2 em}
-
-	\begingroup
-		\fontsize{13 pt}{0 em}{\Mundus \hspace{0 em} \myURL}
-		\hspace{0.1 em}
-		\fontsize{13 pt}{0 em}{\Letter \hspace{0 em} \href{mailto:claytonketner@me.com}{\uline{claytonketner@me.com}}}
-		\hspace{0.1 em}
-		\fontsize{13 pt}{0 em}{\Telefon \hspace{0 em} (650) 533 9695}
-	\endgroup
-
-\end{minipage}
+\begin{minipage}{0.7\textwidth}
+    \raggedright  % Don't justify text
+    \begingroup
+        \fontsize{30 pt}{0}\selectfont
+        Clayton Salinger Ketner
+    \endgroup
+    \break
+    \begingroup
+        \color{\accentColor}
+        \textit{Mechanical Engineering \& Computer Science}
+    \endgroup
+\end{minipage}%
 % Second header column
-\begin{minipage}[t]{0.34\textwidth}
-	\begin{flushright}
-	\vspace{-0.2 in} % Move this column up a bit
-	% Home
-	\begin{minipage}[t]{3.5 em}
-		Home:
-	\end{minipage}
-	\begin{minipage}[t]{10 em}
-		1407 Tarrytown st. \\
-		San Mateo, CA 94402
-	\end{minipage}
-
-	\vspace{0.75 em}
-
-	% School
-	\begin{minipage}[t]{3.5 em}
-		School:
-	\end{minipage}
-	\begin{minipage}[t]{10 em}
-		817 W. 30th st. \\
-		Los Angeles, CA 90007
-	\end{minipage}
-	\end{flushright}
+\begin{minipage}[c]{0.3\textwidth}
+    \begin{flushright}
+        \href{http://www.claytonketner.com}{www.claytonketner.com}%
+        % Make the "claytonketner" parts line up
+        % \hspace doesn't work with \widthof, so here's a workaround
+        \newlength{\textOffset}%
+        \settowidth{\textOffset}{@me}%
+        \hspace{\textOffset}%
+        \break
+        \href{mailto:claytonketner@me.com}{claytonketner@me.com}
+    \end{flushright}
 \end{minipage}
+\\

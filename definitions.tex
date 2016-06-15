@@ -1,97 +1,105 @@
-\setlength{\parindent}{0 in}
-%\setlength{\voffset}{-1 em}
-
-\setlength{\footskip}{0pt}
-
+%\setlength{\footskip}{0pt}
+\def\accentColor{Maroon!90}
 \def\dateColWidth{0.125\textwidth}
-\def\sectionHeaderIndent{0.095\textwidth}
+\newlength{\sectionHeaderIndent}
+\setlength{\sectionHeaderIndent}{2.25cm}
+\newlength{\datedEntryPadding}
+\setlength{\datedEntryPadding}{0.1cm}
+\def\spaceAfterSection{\vspace{0.05 in}\break}
 \def\tabularIndent{0.095\textwidth}
-\def\skillsColWidth{0.32\textwidth}
-\def\spaceAfterSection{\vspace{0.05 in}}
-\def\spaceBeforeDivLine{\vspace{-0.2 em}}
-\def\spaceAfterDivLine{\vspace{-0.4 em}}
+\def\skillsColWidth{0.33\textwidth}
 \def\divLine{
-	\spaceBeforeDivLine
-	\center{ \line(1,0){450}}
-	\spaceAfterDivLine
+    \vspace{0.2cm}
+    \hrule
+    \vspace{0.2cm}
+}
+\def\divNoLine{
+
+    \vspace{0cm}
+
 }
 \newcolumntype{Y}{>{\centering\arraybackslash}X} % For centered tabluarx column
-\def\skillsColWidth{0.33\textwidth}
 
-\def\dateColBG{Gray!30}
+%\def\dateColBG{Gray!30}
 
-\def\myURL{\href{http://www.claytonketner.com}{\uline{www.claytonketner.com}}}
-
-\newcommand{\mysubsection}[1]
-{%
-	{\large\textbf{#1}}
+\newcommand{\mySubsection}[1] {
+    {\large\textbf{#1}}
 }
 
-\newcommand{\sectionHeader}[2]
-{
-	\colorbox{Maroon!90}
-	{
-		\makebox[0.97\textwidth][l]
-		{
-			\hspace*{\sectionHeaderIndent}
-			{\Large
-				{
-					\lsstyle\textbf{\color{White}#1}%
-				}%
-			}
-			\color{White}#2
-		}
-	}
-	\vspace{0.3 em}
+\newcommand{\subtitledSubsection}[2] {
+    {\large\textbf{#1}} -- {\textit{#2}}
 }
 
-\newcommand{\tag}[1]
-{% Prints a 'tag'
-	%\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
-	\mbox{\fontsize{8 pt}{0}{\textsf{\color{Black}\uppercase{#1}}}}%
+\newcommand{\sectionHeader}[1]{
+    \vspace{0.1cm}
+    \colorbox{\accentColor}{%
+        \rlap{%
+            \hspace{\sectionHeaderIndent}%
+            \hspace{-\fboxsep}%
+            \Large{\lsstyle\textbf{\color{White}#1}}%
+        }%
+        \hspace{\linewidth}\hspace{-2\fboxsep}%
+    }
 }
 
-\newcommand{\tagl}[1]
-{% Prints a 'tag'
-	%\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
-	\mbox{\fontsize{8 pt}{0}{\textsf{\color{Black}\uppercase{#1}}}}%
-	\ \vline\ %
+\newcommand{\datedEntry}[2]{
+    \begin{minipage}[c]{\sectionHeaderIndent}
+        \raggedright\color{\accentColor}{#1}
+    \end{minipage}%
+    \begin{minipage}[c]{\datedEntryPadding}
+        \hspace{0cm}
+    \end{minipage}%
+    \begin{minipage}[c]{\textwidth - \sectionHeaderIndent - \datedEntryPadding}
+        #2
+    \end{minipage}
+}
+
+\newcommand{\tag}[1] {
+    % Prints a 'tag'
+    %\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
+    \mbox{\fontsize{8 pt}{0}{\textsf{\color{Black}\uppercase{#1}}}}%
+}
+
+\newcommand{\tagl}[1] {
+    % Prints a 'tag'
+    %\colorbox{Black!75}{\fontsize{8 pt}{0}{\textsf{\color{White}\uppercase{#1}}}}%
+    \mbox{\fontsize{8 pt}{0}{\textsf{\color{Black}\uppercase{#1}}}}%
+    \ \vline\ %
 }
 
 \newcounter{i}
 
-\newcommand{\skillstarbr}[2]
-{% Prints a skill with stars with a line break afterwards
-	\def\stars{}
-	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
-	\forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
-	%
-	\begin{varwidth}{\textwidth}
-		\tag{#1}%
-		\ \stars
-	\end{varwidth}
-	\\[0.2em]
+\newcommand{\skillstarbr}[2] {
+    % Prints a skill with stars with a line break afterwards
+    \def\stars{}
+    \forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
+    \forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
+    %
+    \begin{varwidth}{\textwidth}
+        \tag{#1}%
+        \ \stars
+    \end{varwidth}
+    \\[0.2em]
 }
 
-\newcommand{\skillstar}[2]
-{% Prints a skill with stars without a line break afterwards 
-	\def\stars{}
-	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
-	\forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
-	%
-	\tag{#1 \ \stars} % Draw the tag
+\newcommand{\skillstar}[2] {
+% Prints a skill with stars without a line break afterwards 
+    \def\stars{}
+    \forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{72}}} % Black stars
+    \forLoop[1]{#2}{4}{i}{\expandafter\def\expandafter\stars\expandafter{\stars\ding{73}}} % White stars
+    %
+    \tag{#1 \ \stars} % Draw the tag
 }
 
-\newcommand{\skill}[3] % Args: #1: Skill name, #2: number of years, #3: number of half years (should be 0 or 1)
-{% Prints a skill without a line break afterwards
-	\def\circles{}
-	\forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\circles\expandafter{\circles\CIRCLE}} % Full circles
-	\forLoop[1]{1}{#3}{i}{\expandafter\def\expandafter\circles\expandafter{\circles\LEFTCIRCLE}} % Half circle
-	%
-	\tag{#1 \raisebox{0.1 em}{\circles}} % Draw the tag
+\newcommand{\skill}[3] {
+    % Prints a skill without a line break afterwards
+    % Args: #1: Skill name, #2: number of years, #3: number of half years (should be 0 or 1)
+    \def\circles{}
+    \forLoop[1]{1}{#2}{i}{\expandafter\def\expandafter\circles\expandafter{\circles\CIRCLE}} % Full circles
+    \forLoop[1]{1}{#3}{i}{\expandafter\def\expandafter\circles\expandafter{\circles\LEFTCIRCLE}} % Half circle
+    %
+    \tag{#1 \raisebox{0.1 em}{\circles}} % Draw the tag
 }
-
 
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % Table column type that lets you set a fixed column width
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % Table column type that lets you set a fixed column width
-

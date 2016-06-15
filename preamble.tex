@@ -1,0 +1,34 @@
+%\documentclass[letterpaper, 10pt]{article}  % Prod
+\documentclass[letterpaper, 10pt, draft]{article}  % Dev
+\usepackage[margin=0.4in]{geometry}
+\usepackage{changepage}  % Indenting sections using \adjustwidth
+\usepackage[letterspace=100]{microtype}  % Setting alternate text tracking (spacing between letters)
+%\usepackage{marvosym}  % Phone/mail/globe symbols
+\usepackage{anyfontsize}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage{enumitem}  % Setting bullet style
+\usepackage{ulem}  % Better underline
+\usepackage[hidelinks]{hyperref}  % URLs
+\usepackage{setspace}  % Line spacing
+\usepackage{calc}  % Getting width of text using \widthof{text}
+\usepackage{forloop}
+\usepackage{ifthen}
+\usepackage{varwidth}
+\usepackage{pifont}  % Dings
+\usepackage{array,multirow}  % Defining new table column types (see definitions file)
+\usepackage{hyphenat}  % Specifying text that shouldn't be hyphenated (use \nohyphens{text})
+\usepackage{hhline}  % Double horizontal line
+\usepackage{tabularx}  % Line wrapping in tables
+\usepackage{tabu}  % Making tables with vertical padding
+\usepackage{wasysym}  % Circle skill icons
+
+\thispagestyle{empty}  % Remove page numbers
+\pagestyle{empty}  % Make sure page numbers are removed
+\geometry{layout=letterpaper}
+
+\setlength{\parindent}{0 in}  % Don't indent paragraphs
+% Set itemize defaults
+\setlist[itemize,1]{leftmargin=3em, itemsep=-4pt, before=\vspace{-8pt}}  % 1st indentation level
+\setlist[itemize,2]{leftmargin=3em, itemsep=-3pt, after=\vspace{-4pt}, before=\vspace{-8pt}}
+
+\input{definitions}
