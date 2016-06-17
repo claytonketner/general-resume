@@ -1,5 +1,5 @@
-%\setlength{\footskip}{0pt}
-\def\accentColor{Maroon!90}
+% Need to use CMYK to get preview.app to show colors correctly
+\definecolor{accentColor}{cmyk}{0, 0.902, 1, 0.196}  % RGB: 205, 20, 0
 \def\dateColWidth{0.125\textwidth}
 \newlength{\sectionHeaderIndent}
 \setlength{\sectionHeaderIndent}{2.25cm}
@@ -20,8 +20,6 @@
 }
 \newcolumntype{Y}{>{\centering\arraybackslash}X} % For centered tabluarx column
 
-%\def\dateColBG{Gray!30}
-
 \newcommand{\mySubsection}[1] {
     {\large\textbf{#1}}
 }
@@ -32,7 +30,7 @@
 
 \newcommand{\sectionHeader}[1]{
     \vspace{0.1cm}
-    \colorbox{\accentColor}{%
+    \colorbox{accentColor}{%
         \rlap{%
             \hspace{\sectionHeaderIndent}%
             \hspace{-\fboxsep}%
@@ -44,7 +42,7 @@
 
 \newcommand{\datedEntry}[2]{
     \begin{minipage}[c]{\sectionHeaderIndent}
-        \raggedright\color{\accentColor}{#1}
+        \raggedright\color{accentColor}{#1}
     \end{minipage}%
     \begin{minipage}[c]{\datedEntryPadding}
         \hspace{0cm}
@@ -52,6 +50,10 @@
     \begin{minipage}[c]{\textwidth - \sectionHeaderIndent - \datedEntryPadding}
         #2
     \end{minipage}
+}
+
+\newcommand{\skillHeader}[1]{
+    \textbf{#1} --
 }
 
 \newcommand{\tag}[1] {
