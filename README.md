@@ -1,6 +1,6 @@
 general-resume
 ==============
 
-This is my resume written in LaTeX.
+This is my resume written in LaTeX. [Look at it!](https://github.com/claytonketner/general-resume/blob/master/resume.pdf)
 
 Yes, it's overkill. Yes, it's awesome.
