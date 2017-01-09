@@ -8,4 +8,5 @@ Yes, it's overkill. Yes, it's awesome.
 How To
 ------------
 - Make changes to `.tex` files
-- Run `./build.sh` which assumes you're using OSX, and builds the PDF and then opens it in `Preview.app`
+- Run `./build.sh`, which builds the PDF using `pdftex` and then opens it in the Preview app
+(Note: `build.sh` assumes you're using OSX, because it uses the Preview app)
