@@ -2,7 +2,7 @@ all: clean build
 
 .PHONY: clean
 clean:
-	rm output/*
+	rm -f output/*
 
 .PHONY: build
 build:
