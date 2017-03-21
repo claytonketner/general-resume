@@ -1,6 +1,6 @@
 #!/bin/sh
 BASE_FILENAME="Clayton-Ketner_"
-FILENAME_SUFFIX="General-Resume"
+FILENAME_SUFFIX="Resume"
 CURRENT_BRANCH=`git rev-parse --abbrev-ref HEAD`
 
 if [ $CURRENT_BRANCH != master ] ; then
