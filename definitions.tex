@@ -3,6 +3,8 @@
 \def\dateColWidth{0.125\textwidth}
 \newlength{\sectionHeaderIndent}
 \setlength{\sectionHeaderIndent}{2.25cm}
+\newlength{\sectionHeaderIndentOffset}
+\setlength{\sectionHeaderIndentOffset}{0.1cm}
 \newlength{\datedEntryPadding}
 \setlength{\datedEntryPadding}{0.1cm}
 \def\spaceAfterSection{\vspace{0.05 in}\break}
@@ -33,6 +35,7 @@
     \colorbox{accentColor}{%
         \rlap{%
             \hspace{\sectionHeaderIndent}%
+            \hspace{\sectionHeaderIndentOffset}%
             \hspace{-\fboxsep}%
             \Large{\lsstyle\textbf{\color{White}#1}}%
         }%
