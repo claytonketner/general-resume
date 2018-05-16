@@ -1,0 +1,5 @@
+Download packages off CTAN, decompress, and (usually, I think) run:
+```
+latex PACKAGE_NAME.ins
+```
+Or read the README for your package for instructions.

@@ -8,5 +8,11 @@ Yes, it's overkill. Yes, it's awesome.
 How To
 ------------
 - Make changes to `.tex` files
-- Run `make` (which just cleans and then runs `./build.sh`), which builds the PDF using `pdftex` and then opens it in the Preview app
-(Note: `build.sh` assumes you're using OSX, because it uses the Preview app)
+- Run `make` (which just cleans and then runs `./build.sh`), which builds the PDF using `pdftex` and then opens it in Preview (for OSX), or the default program (for Linux)
+
+Troubleshooting
+-------------------
+- Some error about not being able to find pzdr
+```
+sudo apt-get install texlive-fonts-recommended
+```
