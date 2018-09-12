@@ -45,14 +45,33 @@
 
 \newcommand{\datedEntry}[2]{
     \begin{minipage}[c]{\sectionHeaderIndent}
+        % Date
+        \raggedright\color{accentColor}{#1}
+    \end{minipage}%
+    \begin{minipage}[c]{\datedEntryPadding}
+        % Spacing between date and body
+        \hspace{0cm}
+    \end{minipage}%
+    \begin{minipage}[c]{\textwidth - \sectionHeaderIndent - \datedEntryPadding}
+        % Body
+        #2
+    \end{minipage}
+}
+
+\newcommand{\datedEntryWithLink}[3]{
+    \href{#3}{
+    \begin{minipage}[c]{\sectionHeaderIndent}
+        % Date
         \raggedright\color{accentColor}{#1}
     \end{minipage}%
     \begin{minipage}[c]{\datedEntryPadding}
         \hspace{0cm}
     \end{minipage}%
     \begin{minipage}[c]{\textwidth - \sectionHeaderIndent - \datedEntryPadding}
+        % Body
         #2
     \end{minipage}
+    }
 }
 
 \newcommand{\skillHeader}[1]{
